@@ -186,7 +186,8 @@
 .container-trands-preview-main {
 	display: flex;
 	z-index: 3;
-
+	
+	width: 100%;
 	padding: 160px 20px 17px;
 }
 
