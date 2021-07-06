@@ -5,16 +5,16 @@
 }
 
 @font-face {
-	font-family: 'OpenSans Regular';
+	font-family: 'OpenSans';
   src: url("../fonts/OpenSans-Regular.ttf");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans Bold';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans-Bold.ttf");
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -86,7 +86,7 @@
 	margin-left: 35px;
 
 	font-size: 13px;
-	font-family: OpenSans Regular, sans-serif;
+	font-family: OpenSans, sans-serif;
 	text-transform: uppercase;
 
 	color: #ffffff;
@@ -110,7 +110,8 @@
 
 	font-size: 45px;
 	line-height: 1.67;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 
@@ -123,7 +124,8 @@
 
 .trands-title {
 	font-size: 20px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -145,15 +147,20 @@
 	min-height: 320px;
 }
 
+.container-trands {
+	width: 25%;
+	margin-right: 6.66px;
+}
+
 .trands-preview {
 	display: flex;
 	position: relative;
 
-	width: calc(25% - 5px);
-	margin-right: 6.66px;
+	width: 100%;
+	height: 100%;
 }
 
-.trands-preview:last-child {
+.last-trands-preview {
 	margin-right: 0;
 }
 
@@ -186,12 +193,12 @@
 .container-trands-preview-main {
 	display: flex;
 	z-index: 3;
-	
+
 	width: 100%;
 	padding: 160px 20px 17px;
 }
 
-.trands-preview:nth-child(2) .container-trands-preview-main{
+.large-container-trands-preview-main {
 	padding-top: 135px;
 }
 
@@ -219,7 +226,8 @@
 .trands-preview-item {
 	margin-right: 20px;
 
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #b59f5b;
@@ -232,7 +240,8 @@
 .trands-preview-title {
 	display: block;
 	max-width: 100%;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	line-height: 1.2;
 	text-transform: uppercase;
@@ -290,7 +299,8 @@
 	margin-right: 20px;
 
 	font-size: 14px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 
 	color: #b59f5b;
@@ -305,7 +315,8 @@
 
 	font-size: 20px;
 	line-height: 1.2;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 
 	color: #0f0d0e;
@@ -325,14 +336,15 @@
 	margin-right: 15px;
 
 	font-size: 12px;
-	font-family: OpenSans Regular, sans-serif;
+	font-family: OpenSans, sans-serif;
 
 	color: #888888;
 }
 
 .post-author {
 	font-size: 12px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 
 	color: #000000;
 }
@@ -342,7 +354,7 @@
 
 	font-size: 15px;
 	line-height: 1.5;
-	font-family: OpenSans Regular, sans-serif;
+	font-family: OpenSans, sans-serif;
 
 	color: #0f0d0e;
 }
@@ -353,7 +365,8 @@
 
 .right-sidebar-title {
 	font-size: 14px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 
@@ -398,7 +411,7 @@
 
 .right-sidebar-post-date {
 	font-size: 12px;
-	font-family: OpenSans Regular, sans-serif;
+	font-family: OpenSans, sans-serif;
 
 	color: rgba(0, 0, 0, 0.54);
 }
@@ -406,7 +419,8 @@
 .right-sidebar-post-title {
 	font-size: 14px;
 	line-height: 1.3;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 
 	color: #000000;
@@ -428,12 +442,7 @@
 }
 
 .hidden-text {
-	position: absolute;
-
-	width: 1px;
-  height: 1px;
-
-  clip: rect(1px, 1px, 1px, 1px);
+	display: none;
 }
 
 .form-field {
@@ -441,7 +450,7 @@
 	padding-right: 18px;
 
 	font-size: 13px;
-	font-family: OpenSans Regular, sans-serif;
+	font-family: OpenSans, sans-serif;
 
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -500,7 +509,8 @@
 	height: 45px;
 
 	font-size: 14px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 
 	color: #ffffff;
@@ -531,7 +541,8 @@
 
 .right-sidebar-tag-link {
 	font-size: 12px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 
 	color: #0f0d0e;
@@ -560,7 +571,8 @@
 
 .right-sidebar-theme-link {
 	font-size: 14px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-transform: capitalize;
 
 	color: #000000;
@@ -572,7 +584,8 @@
 
 .right-sidebar-theme-count {
 	font-size: 12px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	vertical-align: super;
 
 	color: #b59f5b;
@@ -583,7 +596,8 @@
 }
 
 .container-product-title {
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	color: #0f0d0e;
 	text-transform: uppercase;
@@ -603,18 +617,17 @@
 
 .container-product {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .article-product {
 	display: flex;
 	flex-direction: column;
 
-	width: calc(33.33% - 43.33px);
+	width: 33.33%;
 	margin-right: 65px;
 }
 
-.article-product:last-child {
+.last-article-product {
 	margin-right: 0;
 }
 
@@ -647,14 +660,15 @@
 }
 
 .product-title {
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	color: #0f0d0e;
 	text-transform: uppercase;
 }
 
 .product-text {
-	font-family: OpenSans Regular, sans-serif;
+	font-family: OpenSans, sans-serif;
 	font-size: 15px;
 	color: #0f0d0e;
 	line-height: 1.5;
@@ -688,7 +702,8 @@
 .product-price {
 	display: block;
 
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	color: #0f0d0e
 }
@@ -711,7 +726,8 @@
 	-moz-appearance: none;
 	border-width: 0;
 	background-color: #b59f5b;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -743,7 +759,7 @@
   margin-right: 25px;
 }
 
-.social-icon-item:last-child {
+.last-social-icon-item {
   margin-right: 0;
 }
 
@@ -785,7 +801,8 @@
 	margin-top: 70px;
 
 	font-size: 12px;
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	text-align: center;
 
 	color: #999999;
@@ -842,7 +859,8 @@
 }
 
 .popup-title {
-	font-family: OpenSans Bold, sans-serif;
+	font-family: OpenSans, sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	color: #0f0d0e;
 	text-transform: uppercase;
@@ -866,7 +884,7 @@
 .form-text-question {
 	display: block;
 
-	font-family: OpenSans Reqular, sans-serif;
+	font-family: OpenSans, sans-serif;
 	font-size: 13px;
 }
 
@@ -892,7 +910,7 @@
   background-size: auto 15px;
   background-position: right 15px center;
 
-  font-family: OpenSans Reqular, sans-serif;
+  font-family: OpenSans, sans-serif;
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.54);
 }
@@ -905,7 +923,7 @@
 	margin-bottom: 5px;
 }
 
-.radio-group:nth-child(2n) {
+.second-radio-group {
 	margin-left: 15px;
 }
 
@@ -919,12 +937,8 @@
 }
 
 .radio-group-text {
-	font-family: OpenSans Reqular, sans-serif;
+	font-family: OpenSans, sans-serif;
 	font-size: 13px;
-}
-
-.radio-group-text:nth-of-type(n + 2) {
-	margin-left: 15px;
 }
 
 .radio-group-text:before {
@@ -964,7 +978,7 @@
 	outline: 0;
 	background-color: #f4f7f6;
 
-	font-family: OpenSans Reqular, sans-serif;
+	font-family: OpenSans, sans-serif;
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.54);
 }
@@ -981,7 +995,8 @@
   border: 0;
   background-color: #b59f5b;
 
-  font-family: OpenSans Bold, sans-serif;
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1037,7 +1052,7 @@
 	}
 
 	.header-menu-burger-line {
-		top: calc(50% - 2px);
+		top: 8px;
 	}
 
 	.header-menu-burger:before {
@@ -1074,17 +1089,42 @@
 		margin-bottom: 20px;
 	}
 
-	.trands-preview {
-		width: calc(50% - 2.5px);
-		margin-right: 0;
+	.container-trands {
+		flex-basis: 50%;
+		padding-right: 2.5px;
 		margin-bottom: 5px;
+		margin-right: 0;
+	}
+
+	.even-container-trands {
+		padding-right: 0;
+		padding-left: 2.5px;
+	}
+
+	.trands-preview {
+		width: 100%;
+		height: 100%;
+		margin-right: 0;
+	}
+
+	.even-trands-preview {
+		padding-right: 0;
+	}
+
+	.even-trands-preview:after {
+		padding-right: 0;
+	}
+
+	.even-trands-preview-image {
+		padding-right: 0;
 	}
 
 	.container-trands-preview-main {
 		padding-top: 95px;
+		width: 100%;
 	}
 
-	.trands-preview:nth-child(2) .container-trands-preview-main{
+	.large-container-trands-preview-main{
 		padding-top: 72px;
 	}
 
@@ -1128,7 +1168,7 @@
 		background-color: #eeeeee;
 	}
 
-	.post:last-child:after {
+	.last-post:after {
 		display: inline;
 	}
 
@@ -1170,12 +1210,14 @@
 	}
 
 	.article-product {
-		width: calc(50% - 12.5px);
+		flex-basis: 50%;
 		margin-right: 0;
+		padding-right: 12.5px;
 	}
 
-	.article-product:nth-child(odd) {
-		margin-right: 25px;
+	.even-article-product {
+		padding-right: 0;
+		padding-left: 12.5px;
 	}
 
 	.article-product {
@@ -1184,6 +1226,10 @@
 
 	.container-product-title:after {
 		margin-bottom: 25px;
+	}
+
+	.container-product {
+		flex-wrap: wrap;
 	}
 
 	.container-product-image {
@@ -1233,7 +1279,7 @@
     background-size: 25px;
 	}
 
-	.radio-group:nth-child(2n) {
+	.second-radio-group {
 		margin-left: 30px;
 	}
 
@@ -1294,6 +1340,15 @@
 		margin-bottom: 25px;
 	}
 
+	.container-trands {
+		flex-basis: 100%;
+		padding-right: 0;
+	}
+
+	.even-container-trands {
+		padding-left: 0;
+	}
+
 	.trands-preview {
 		width: 100%;
 	}
@@ -1303,7 +1358,7 @@
 		padding: 86px 15px 13px;
 	}
 
-	.trands-preview:nth-child(2) .container-trands-preview-main{
+	.large-container-trands-preview-main{
 		padding-top: 65px;
 	}
 
@@ -1344,7 +1399,7 @@
 		margin-top: 19px;
 	}
 
-	.post:last-child {
+	.last-post {
 		margin-bottom: 40px;
 	}
 
@@ -1376,7 +1431,7 @@
 		font-size: 14px;
 	}
 
-	.post:last-child:after {
+	.last-post:after {
 		display: block;
 	}
 
@@ -1425,6 +1480,11 @@
 	.article-product {
 		width: 100%;
 		margin-bottom: 25px;
+		padding-right: 0;
+	}
+
+	.even-article-product {
+		padding-left: 0;
 	}
 
 	.container-product-image {
